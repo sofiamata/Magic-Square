@@ -26,15 +26,13 @@ public class MagicSquare {
         System.out.println("Enter an integer number for the size of the square");
         int size = scan.nextInt(); //size of next square*/
 
-
-            
-                     /**********BONUS 1 **************
+        //This assigns random integers to the 2D Array
+/*
                         int[][] matrix;
                         matrix = new int [size][size];
                         Square sq = new Square (matrix);
                         sq.matrixChange();
-       
-                    //*****************************/
+*/
             
     //create a new Square of the given size
     Square sq = new Square(size);
@@ -46,9 +44,6 @@ public class MagicSquare {
     //print the square
         sq.printSquare();
         
-        
-    //Part B -
-                // >>>>>Delete this line to test part B
       System.out.println("******** Square details ********");
 
     //print the sums of its rows
@@ -60,29 +55,19 @@ public class MagicSquare {
         for (int i = 0; i < size; i++) {
             System.out.println("Column " + i + " sum: " + sq.sumColumn(i));
         }
-               // >>>>>Delete this line to test part B 
 
-    //Part C -
-                // >>>>>Delete this line to test part C
     //print the sum of the main diagonal
         System.out.println("Main diagonal sum: " + sq.sumMainDiag());
 
     //print the sum of the other diagonal
         System.out.println("Other diagonal sum: " + sq.sumOtherDiag());
 
-                   //>>>>>Delete this line to test part C 
-
-    //Part D -
-                // >>>>>Delete this line to test part D
     //determine and print whether it is a magic square  
         if (sq.isMagic()) {
             System.out.println("This 2D array is a magic square");
         } else {
                 System.out.println("This 2D array is not a magic square");
             }
-               // >>>>>Delete this line to test part D 
-        
-
                
     }
     
